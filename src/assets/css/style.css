@@ -74,3 +74,22 @@ footer {
     padding-bottom: 3px;
 }
 
+
+/* Responsive */
+html { -webkit-text-size-adjust: 100%; }
+*, *::before, *::after { box-sizing: border-box; }
+img, svg, video { max-width: 100%; height: auto; }
+.content { overflow-wrap: anywhere; word-break: break-word; }
+.content pre, .content code { white-space: pre-wrap; overflow-x: auto; max-width: 100%; }
+.content table { max-width: 100%; }
+.header-left, .header-right { flex-wrap: wrap; }
+
+@media (max-width: 700px) {
+    html, body { padding: 0; }
+    .main { border-radius: 0; box-shadow: none; min-height: 100vh; }
+    .header { flex-direction: column; align-items: stretch; border-radius: 0; }
+    .header-left, .header-right { justify-content: center; }
+    .route { flex: 1 1 auto; text-align: center; }
+    .content { padding: 8px; font-size: medium; }
+    .content table { display: block; overflow-x: auto; }
+}
